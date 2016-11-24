@@ -106,7 +106,7 @@ nb_train_samples = 1110
 nb_test_samples = 16
 nb_validation_samples = 150
 # epoch szám
-nb_epoch = 1
+nb_epoch = 50
 
 # előtanított modell betöltése, a fully-connected rétegek nélkül
 base_model = InceptionV3(weights='imagenet', include_top=False)
