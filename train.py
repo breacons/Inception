@@ -116,7 +116,7 @@ x = GlobalAveragePooling2D()(x)
 # ezután hozzáadunk egy előrecsatolt réteget ReLU aktivációs függvénnyel
 x = Dense(1024, activation='relu')(x)
 # 10 kimenet a 10 osztályhoz
-predictions = Dense(10, activation='sigmoid')(x)
+predictions = Dense(10, activation='softmax')(x)
 # a model létrehozása
 model = Model(input=base_model.input, output=predictions)
 
